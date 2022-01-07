@@ -16,8 +16,8 @@ msgCounter = 0
 # vvv Change these variables if needed vvv
 numMessages = 10
 time = 60 #seconds
-channelID = 865211750081101844
-roleID = '697149372626108542'
+channelID = 928998296234651708
+roleID = '781178708726644771'
 # ^^^ Change these variables if needed ^^^
 
 async def countMessages():
