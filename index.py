@@ -14,7 +14,7 @@ statusChannel = 738439111412809730
 msgCounter = 0
 
 # vvv Change these variables if needed vvv
-numMessages = 10
+numMessages = 30
 time = 60 #seconds
 channelID = 928998296234651708
 roleID = '781178708726644771'
