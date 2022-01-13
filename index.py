@@ -5,6 +5,7 @@ import asyncio
 import discord
 from dotenv import load_dotenv
 from datetime import datetime
+from config import *
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
@@ -13,12 +14,7 @@ client = discord.Client()
 statusChannel = 738439111412809730
 msgCounter = 0
 
-# vvv Change these variables if needed vvv
-numMessages = 30
-time = 60 #seconds
-channelID = 928998296234651708
-roleID = '781178708726644771'
-# ^^^ Change these variables if needed ^^^
+
 
 async def countMessages():
     while True:
@@ -40,8 +36,9 @@ async def on_message(msg):
     if msg.author == client.user:
         return
 
-    global msgCounter
-    msgCounter += 1
+    if msg.guild.id == serverID:
+        global msgCounter
+        msgCounter += 1
 
 def main():
     asyncio.get_event_loop().create_task(countMessages())
