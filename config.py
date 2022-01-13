@@ -1,0 +1,5 @@
+numMessages = 30
+time = 60 #seconds
+serverID = 697136573572972676
+channelID = 865211750081101844
+roleID = '697149372626108542'
