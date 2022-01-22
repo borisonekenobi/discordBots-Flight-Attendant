@@ -1,5 +1,5 @@
-numMessages = 30
+numMessages = 45
 time = 60 #seconds
-serverID = 697136573572972676
-channelID = 865211750081101844
+serverID = 744117840336125992
+channelID = 928998296234651708
 roleID = '697149372626108542'
