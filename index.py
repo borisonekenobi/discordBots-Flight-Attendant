@@ -22,7 +22,8 @@ async def countMessages():
         if (msgCounter >= numMessages):
             print('Messages exceeded ' + str(numMessages) + ' in the last ' + str(time) + ' seconds!')
             await client.get_channel(channelID).send('<@&' + roleID + '>')
-            msgCounter = 0
+        msgCounter = 0
+
         await asyncio.sleep(time)
 
 @client.event
